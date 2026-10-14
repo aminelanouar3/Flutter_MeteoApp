@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'drawer.widget.dart';
+import '../config/global.params.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -17,67 +18,19 @@ class HomePage extends StatelessWidget {
           spacing: 16.0,
           runSpacing:16.0,
           children : [
-            InkWell(
-              child: Ink.image(
-                height: 180,
-                width: 180,
-                image: AssetImage('images/meteo.png',),
-              ),
-              onTap: () {
-                Navigator.pushNamed(context,'/meteo');
-              },
-            ),
-            InkWell(
-              child: Ink.image(
-                height: 180,
-                width: 180,
-                image: AssetImage('images/maps.png',),
-              ),
-              onTap: () {
-                Navigator.pushNamed(context,'/maps');
-              },
-            ),
-            InkWell(
-              child: Ink.image(
-                height: 180,
-                width: 180,
-                image: AssetImage('images/contacts.png',),
-              ),
-              onTap: () {
-                Navigator.pushNamed(context,'/contacts');
-              },
-            ),
-            InkWell(
-              child: Ink.image(
-                height: 180,
-                width: 180,
-                image: AssetImage('images/messenger.png',),
-              ),
-              onTap: () {
-                Navigator.pushNamed(context,'/messenger');
-              },
-            ),
-            InkWell(
-              child: Ink.image(
-                height: 180,
-                width: 180,
-                image: AssetImage('images/chatbot.png',),
-              ),
-              onTap: () {
-                Navigator.pushNamed(context,'/chatbot');
-              },
-            ),
-            InkWell(
-              child: Ink.image(
-                height: 180,
-                width: 180,
-                image: AssetImage('images/parametres.png',),
-              ),
-              onTap: () {
-                Navigator.pushNamed(context,'/parametres');
-              },
-            ),
-          ]
+            ...(Globalparams.acceuil as List).map((item) {
+              return InkWell(
+                child: Ink.image(
+                  height: 180,
+                  width: 180,
+                  image: item['image'],
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context,"${item['route']}");
+                },
+              );
+            }).toList(),
+          ],
         ),
       ),
     );

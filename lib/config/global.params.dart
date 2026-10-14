@@ -11,4 +11,13 @@ class Globalparams{
         {"title":"Paramètres","icon":Icon(Icons.settings,color: Colors.blue),"route":"/parametres"},
         {"title":"Déconnexion","icon":Icon(Icons.logout,color: Colors.blue),"route":"/Authentification"},
     ];
+
+    static List<Map<String,dynamic>> acceuil = [
+        {"image": AssetImage('images/meteo.png',),"route":"/meteo"},
+        {"image": AssetImage('images/maps.png',),"route":"/maps"},
+        {"image": AssetImage('images/contacts.png',),"route":"/contacts"},
+        {"image": AssetImage('images/messenger.png',),"route":"/messenger"},
+        {"image": AssetImage('images/chatbot.png',),"route":"/chatbot"},
+        {"image": AssetImage('images/parametres.png',),"route":"/parametres"},
+    ];
 }
