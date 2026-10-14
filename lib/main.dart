@@ -1,0 +1,34 @@
+import 'package:flutter/material.dart';
+import 'pages/inscription.page.dart';
+import 'pages/authentification.page.dart';
+import 'pages/home.page.dart';
+import 'pages/meteo.page.dart';
+import 'pages/chatbot.page.dart';
+import 'pages/contacts.page.dart';
+import 'pages/maps.page.dart';
+import 'pages/messenger.page.dart';
+import 'pages/parametres.page.dart';
+void main() {
+  runApp(const MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  static final routes = {
+    '/home': (context) => HomePage(),
+    '/inscription': (context) => InscriptionPage(),
+    '/authentification': (context) => AuthentificationPage(),
+    '/meteo': (context) => Meteo(),
+    '/chatbot': (context) => ChatBot(),
+    '/contacts': (context) => Contacts(),
+    '/maps': (context) => Maps(),
+    '/messenger': (context) => Messenger(),
+    '/parametres': (context) => Parametres(),
+  };
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      routes: routes,
+      home: const InscriptionPage(),
+    );
+  }
+}

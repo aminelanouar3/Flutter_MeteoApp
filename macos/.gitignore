@@ -1,0 +1,24 @@
+# Dart and Flutter
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android
+android/local.properties
+android/key.properties
+**/android/captures/
+
+# IDE
+.idea/
+.vscode/
+
+# Flutter-related
+**/Flutter/ephemeral/
+**/Pods/
+
+# Xcode-related
+**/dgph
+**/xcuserdata/
