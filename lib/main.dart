@@ -8,6 +8,7 @@ import 'pages/contacts.page.dart';
 import 'pages/maps.page.dart';
 import 'pages/messenger.page.dart';
 import 'pages/parametres.page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -28,7 +29,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: routes,
-      home: const InscriptionPage(),
+     home: FutureBuilder(
+      future: SharedPreferences.getInstance(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          bool conn = snapshot.data?.getBool('connecte') ?? false;
+          if (conn) {
+            return HomePage();
+          } 
+        }
+        return AuthentificationPage();
+      }
+    )
     );
   }
 }

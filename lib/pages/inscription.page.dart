@@ -13,7 +13,7 @@ class _InscriptionPageState extends State<InscriptionPage>{
     Widget build(BuildContext context){
         return Scaffold(
             appBar:AppBar(
-                title: const Text('Page Home (Accueil)'),
+                title: const Text("Page Inscription"),
                 backgroundColor : Colors.blue,
             ),
             body: Center(

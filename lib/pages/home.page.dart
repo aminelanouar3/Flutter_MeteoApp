@@ -4,13 +4,12 @@ import 'drawer.widget.dart';
 import '../config/global.params.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: MyDrawer(),
       appBar: AppBar(
-        title: const Text('Page Home (Accueil)'),
+        title: const Text("Page  Accueil"),
         backgroundColor: Colors.green,
       ),
       body: Center(

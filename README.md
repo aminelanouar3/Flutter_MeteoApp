@@ -21,7 +21,7 @@ Ce dépôt regroupe les travaux pratiques réalisés dans le cadre du cours de d
 - À compléter.
 
 ### TP 2 — [Titre du TP]
-**Objectif :** À compléter.
+**Objectif :** Développer une application Flutter qui gère l'inscription et la connexion des utilisateurs, et maintient leur session connectée(shared_prefrences).
 
 **Travail réalisé :**
 - À compléter.
@@ -30,13 +30,28 @@ Ce dépôt regroupe les travaux pratiques réalisés dans le cadre du cours de d
 - À compléter.
 
 ### TP 3 
-**Objectif :** L'objectif ete de creer la page d'acceuil et le menu(Drawer).
+**Objectif :** L'objectif de cet atelier était double: créer la Page d'Accueil et implémenter le Menu Latéral (Drawer) de l'application de manière dynamique, tout en gérant l'état de connexion de l'utilisateur.
 
 **Travail réalisé :**
-- À compléter.
+- Création d'une page d'accueil avec des icônes et des images interactives.
+
+-Navigation entre plusieurs pages : Météo, Maps, Contacts, Messenger, ChatBot et Paramètres.
+
+-Création d'un menu latéral (Drawer) pour accéder aux différentes fonctionnalités.
+
+-Mise en place de la navigation nommée avec Navigator.pushNamed().
+
+-Gestion de la déconnexion avec SharedPreferences.
+
+-Utilisation des ressources locales (images et icônes) dans l'interface.
 
 **Notions apprises :**
-- À compléter.
+- Scaffold 
+- Drawer
+- ListView
+- ListTile
+- Wrap
+- InkWell
 
 ## Installation et exécution
 1. Cloner le dépôt GitHub.
@@ -45,4 +60,5 @@ Ce dépôt regroupe les travaux pratiques réalisés dans le cadre du cours de d
 4. Lancer l'application avec `flutter run`.
 
 ## Auteur
+Lanouar Mohamed Amine
 Étudiant en Licence Technologies de l'Informatique — spécialité DSI, ISET Tataouine.
