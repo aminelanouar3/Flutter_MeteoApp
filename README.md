@@ -1,17 +1,48 @@
-# my_app
+# Projet Flutter — Travaux pratiques
 
-A new Flutter project.
+## Présentation
+Ce dépôt regroupe les travaux pratiques réalisés dans le cadre du cours de développement mobile avec Flutter et Dart.
 
-## Getting Started
+## Technologies utilisées
+- Flutter
+- Dart
+- Android Studio et émulateur Android
+- Visual Studio Code
 
-This project is a starting point for a Flutter application.
+## Liste des travaux pratiques
 
-A few resources to get you started if this is your first Flutter project:
+### TP 1 — [Titre du TP]
+**Objectif :** À compléter.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+**Travail réalisé :**
+- À compléter.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Notions apprises :**
+- À compléter.
+
+### TP 2 — [Titre du TP]
+**Objectif :** À compléter.
+
+**Travail réalisé :**
+- À compléter.
+
+**Notions apprises :**
+- À compléter.
+
+### TP 3 
+**Objectif :** L'objectif ete de creer la page d'acceuil et le menu(Drawer).
+
+**Travail réalisé :**
+- À compléter.
+
+**Notions apprises :**
+- À compléter.
+
+## Installation et exécution
+1. Cloner le dépôt GitHub.
+2. Ouvrir le projet dans VS Code ou Android Studio.
+3. Exécuter `flutter pub get`.
+4. Lancer l'application avec `flutter run`.
+
+## Auteur
+Étudiant en Licence Technologies de l'Informatique — spécialité DSI, ISET Tataouine.
