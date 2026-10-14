@@ -13,20 +13,71 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: Container(
-          padding: const EdgeInsets.all(10),
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              minimumSize: const Size.fromHeight(50),
+        child: Wrap(
+          spacing: 16.0,
+          runSpacing:16.0,
+          children : [
+            InkWell(
+              child: Ink.image(
+                height: 180,
+                width: 180,
+                image: AssetImage('images/meteo.png',),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context,'/meteo');
+              },
             ),
-            onPressed: () {
-              _deconnexion(context);
-            },
-            child: const Text(
-              'Déconnexion',
-              style: TextStyle(fontSize: 22),
+            InkWell(
+              child: Ink.image(
+                height: 180,
+                width: 180,
+                image: AssetImage('images/maps.png',),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context,'/maps');
+              },
             ),
-          ),
+            InkWell(
+              child: Ink.image(
+                height: 180,
+                width: 180,
+                image: AssetImage('images/contacts.png',),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context,'/contacts');
+              },
+            ),
+            InkWell(
+              child: Ink.image(
+                height: 180,
+                width: 180,
+                image: AssetImage('images/messenger.png',),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context,'/messenger');
+              },
+            ),
+            InkWell(
+              child: Ink.image(
+                height: 180,
+                width: 180,
+                image: AssetImage('images/chatbot.png',),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context,'/chatbot');
+              },
+            ),
+            InkWell(
+              child: Ink.image(
+                height: 180,
+                width: 180,
+                image: AssetImage('images/parametres.png',),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context,'/parametres');
+              },
+            ),
+          ]
         ),
       ),
     );
